@@ -1,10 +1,8 @@
-# ProyectoWeb
-# Iniciar proyecto
+##ProyectoWeb
 
-En la terminal "npm i"
+####Inciar proyecto
+* En la terminal "npm i"
+* Luego "npm run dev" para desarrollo
+* o "npm start" para producción
 
-Luego "npm run dev" para desarrollo
-
-O "npm start" para producción
-
-localhost:8080
+*Localhost:8080*
