@@ -8,7 +8,6 @@ app.set('views', './views')
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
-app.use(express.static(__dirname + '/public'));
 
 app.use('/', require('./routes/routes'))
 
