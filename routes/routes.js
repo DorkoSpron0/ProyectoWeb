@@ -21,6 +21,17 @@ router.get('/comentarios', async (req,res) => {
     res.render('coms',{coments})
 })
 
+router.get('/create-card', (req,res) => {
+    res.render('newCard')
+})
+
+router.post('/create-card', async (req,res) => {
+    const {title,description,author} = req.body
+    const cum = new Comms({title,description,author})
+    await cum.save()
+    res.redirect('/')
+})
+
 
 
 
