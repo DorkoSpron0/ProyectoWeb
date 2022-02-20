@@ -1,5 +1,14 @@
-body
-{
-    background: url(https://cdn.dribbble.com/users/770796/screenshots/2033148/control_room_background.jpg?compress=1&resize=800x600&vertical=top) no-repeat center center fixed;
+.main-header {
+    position: relative;
+    background: url(https://cdn.dribbble.com/users/770796/screenshots/2033148/control_room_background.jpg?compress=1&resize=800x600&vertical=top);
     background-size: cover;
 }
+
+.background-overlay {
+    background: rgba(48, 51, 107,.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
