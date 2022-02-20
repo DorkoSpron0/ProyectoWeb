@@ -2,7 +2,7 @@ const express = require('express');
 require('./database')
 const app = express()
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 8000);
 app.set('view engine','ejs')
 app.set('views', './views')
 
