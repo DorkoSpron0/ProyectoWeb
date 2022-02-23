@@ -1,4 +1,5 @@
 const express = require('express');
+const morgan = require('morgan');
 require('./database')
 const app = express()
 
@@ -9,6 +10,7 @@ app.set('views', './views')
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 app.use(express.static('public'))
+app.use(morgan('dev'))
 
 app.use('/', require('./routes/routes'))
 

@@ -5,12 +5,13 @@
     <div class="card py-2 px-2 my-3">
         <div class="row">
             <div class="col-md-4">
-                <img src="<%= bloques[i].img%>" class="img-fluid rounded">
+                <img src="<%= bloques[i].data.img%>" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
-                <h1 class="text-center"><%= bloques[i].title %></h1>
+                <h1 class="text-center"><%= bloques[i].data.title %></h1>
                 <div class="card-body">
-                    <p><%= bloques[i].description%></p>
+                    <p><%= bloques[i].data.description %></p>
+                    <a href="/viewCard/<%= bloques[i].id %>">AAA</a>
                 </div>
             </div>
         </div>
