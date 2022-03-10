@@ -28,7 +28,11 @@
     text-align: center;
 }
 
-.team{
+.team {
     align-items: center;
+    text-align: center;
+}
+
+footer {
     text-align: center;
 }
