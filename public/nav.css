@@ -49,7 +49,7 @@ header {
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgb(48, 131, 48, 1);
+    background-color: rgb(48, 131, 48,1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -57,5 +57,5 @@ button {
 }
 
 button:hover {
-    background-color: rgb(48, 131, 48, 0.8);
+    background-color: #2d792d;
 }

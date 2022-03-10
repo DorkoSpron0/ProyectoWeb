@@ -1,15 +1,31 @@
-.main-header {
+.background-description {
     position: relative;
     background: url(https://i.postimg.cc/XvyCK2rn/Background-web.jpg);
     background-size: cover;
 }
 
-.background-overlay {
+.description {
     box-shadow: inset 0 0 40px #0D0D0D;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    height: 50%;    
+    align-items: center;
+}
+
+.description-logo {
+    justify-content: flex-end;
+    padding-left: 10%;
+    width: 1000px;
+}
+
+.container {
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.container div {
+    text-align: center;
 }
 
 .team{
