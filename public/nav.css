@@ -18,14 +18,17 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 5%;
+    padding: 0.8% 5%;
     background-color: #24252A;
 }
 
 .logo {
     cursor: pointer;
     margin-right: auto;
-    width: 30px;
+}
+
+#nav-logo {
+    width: 20%;
 }
 
 .nav__links {
@@ -40,10 +43,6 @@ header {
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    color: #2d792d;
 }
 
 button {
