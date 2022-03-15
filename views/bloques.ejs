@@ -5,16 +5,15 @@
 <section class="bloques-background">
 <% for(var i = 0; i < bloques.length; i++) {%>
     <div class="bloques">
-        <div class="bloques-descripcion">
-            <div class="col-md-4">
-                <img src="<%= bloques[i].data.img%>" class="img-fluid rounded">
+        <div class="bloques-description">
+            <div class="bloques-imagen">
+                <img id="photo" src="<%= bloques[i].data.img%>" >
             </div>
-            <div class="col-md-8">
-                <h1 class="text-center"><%= bloques[i].data.title %></h1>
-                <div class="card-body">
-                    <p><%= bloques[i].data.description %></p>
-                    <a href="/viewCard/<%= bloques[i].id %>">Ampliar información</a>
-                </div>
+
+            <div class="bloques-texto">
+                <h1><%= bloques[i].data.title %></h1>
+                <p><%= bloques[i].data.description %></p>
+                <a href="/viewCard/<%= bloques[i].id %>">Ampliar información</a>
             </div>
         </div>
     </div>
