@@ -1,9 +1,11 @@
 <%- include('partials/main') %>
 
-<div class="container">
+<link rel="stylesheet" href="bloques.css">
+
+<section class="bloques-background">
 <% for(var i = 0; i < bloques.length; i++) {%>
-    <div class="card py-2 px-2 my-3">
-        <div class="row">
+    <div class="bloques">
+        <div class="bloques-descripcion">
             <div class="col-md-4">
                 <img src="<%= bloques[i].data.img%>" class="img-fluid rounded">
             </div>
@@ -19,4 +21,4 @@
     
     
 <%}%>
-</div>
+</section>
