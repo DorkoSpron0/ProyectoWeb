@@ -62,4 +62,12 @@ footer {
     text-align: center;
 }
 
+/* Todo el home */
+* {
+    color: aliceblue;
+}
 
+/*Tajetas del team */
+.tarjetas-integrantes {
+    margin: 20 20 20 20;
+}
