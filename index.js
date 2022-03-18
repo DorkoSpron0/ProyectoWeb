@@ -3,7 +3,7 @@ const morgan = require('morgan');
 require('./database')
 const app = express()
 
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 4000);
 app.set('view engine','ejs')
 app.set('views', './views')
 
