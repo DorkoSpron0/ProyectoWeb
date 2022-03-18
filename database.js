@@ -1,5 +1,11 @@
-const Mongoose = require("mongoose");
+const { Pool } = require('pg')
 
-Mongoose.connect('mongodb+srv://dorkosprono:rRbgESQlT9ahei6r@cluster0.qsqw4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-    .then(db => console.log('DB'))
-    .catch(err => console.error(err))
+const pool = new Pool({
+	user: 'postgres',
+	host: 'localhost',
+	password: 'pendejo4172286',
+	database: 'inemapstest01',
+	port: '5432'
+})
+
+module.exports = pool

@@ -1,6 +1,7 @@
 const {Router} = require("express");
 const bloques = require('../bloques')
-const Comms = require('../models/comments')
+//const Comms = require('../models/comments')
+const pool = require('../database.js')
 
 const router = Router()
 
@@ -17,8 +18,8 @@ router.get('/Interes', (req,res) => {
 })
 
 router.get('/comentarios', async (req,res) => {
-    const coments = await Comms.find()
-    res.render('coms',{coments})
+    const resp = await pool.query('SELECT * FROM posts')
+    res.json(resp.rows)
 })
 
 router.get('/create-card', (req,res) => {
@@ -36,11 +37,10 @@ router.get('/viewCard/:id', (req,res) => {
     
 })
 
-router.post('/create-card', async (req,res) => {
+router.post('/comentarios', async (req,res) => {
     const {title,description,author} = req.body
-    const cum = new Comms({title,description,author})
-    await cum.save()
-    res.redirect('/')
+    const resp = await pool.query('INSERT INTO posts(title,description,author) VALUES ($1,$2,$3)', [title,description,author])
+    res.json(resp)
 })
 
 
