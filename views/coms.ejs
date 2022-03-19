@@ -16,18 +16,9 @@
     </div>
 </div>
 
-<% for(var i = 0; i<coments.length; i++ ) {%>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h1><%= coments[i].title %></h1>
-                        <h4><%= coments[i].description %></h4>
-                        <p><%= coments[i].author %></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<% for(var i = 0; i<coms.length; i++ ) {%>
+    <h1><%= coms[i].title %></h1>
+    <h3> <%= coms[i].description%> </h3>
+    <p> <%= coms[i].author %> </p>
+    <hr>
 <% }%>

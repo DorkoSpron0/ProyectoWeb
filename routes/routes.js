@@ -19,7 +19,8 @@ router.get('/Interes', (req,res) => {
 
 router.get('/comentarios', async (req,res) => {
     const resp = await pool.query('SELECT * FROM posts')
-    res.json(resp.rows)
+    const coms = resp.rows
+    res.render('coms', {coms})
 })
 
 router.get('/create-card', (req,res) => {
